@@ -1,0 +1,61 @@
+/* ============================================
+   CSS Custom Properties（デザイントークン）
+   ============================================ */
+:root {
+  /* --- Colors --- */
+  --color-primary: #009E96;
+  --color-primary-hover: #008a83;
+  --color-text: #333333;
+  --color-text-light: #666666;
+  --color-bg: #ffffff;
+  --color-bg-secondary: #f5f5f5;
+  --color-border: #e0e0e0;
+  --color-border-light: #eeeeee;
+
+  /* --- Sofa simulator slider colors --- */
+  --color-light-incandescent: #ff9329;
+  --color-light-warm-white: #ffd6aa;
+  --color-light-neutral-white: #ffffff;
+  --color-light-daylight-white: #cce0ff;
+  --color-light-cool-daylight: #9fb6db;
+  --color-power-0: #666666;
+  --color-power-25: #999999;
+  --color-power-50: #cccccc;
+  --color-power-75: #dddddd;
+  --color-power-100: #eeeeee;
+  --color-scene-background: #ffffff;
+  --color-grid-cell: #cccccc;
+  --color-grid-section: #999999;
+  --color-overlay-backdrop: rgba(0, 0, 0, 0.3);
+  --color-slider-thumb-shadow: rgba(0, 0, 0, 0.1);
+  --color-slider-thumb-focus-ring: rgba(59, 130, 246, 0.2);
+
+  /* --- Typography --- */
+  --font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN',
+    'Hiragino Sans', Meiryo, sans-serif;
+  --font-size-xs: 0.75rem;   /* 12px */
+  --font-size-sm: 0.875rem;  /* 14px */
+  --font-size-md: 1rem;      /* 16px */
+  --font-size-lg: 1.25rem;   /* 20px */
+  --font-size-xl: 1.5rem;    /* 24px */
+  --font-size-2xl: 2rem;     /* 32px */
+
+  /* --- Spacing --- */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-2xl: 48px;
+
+  /* --- Layout --- */
+  --header-height: 56px;
+  --sidebar-width: 360px;
+  --border-radius: 8px;
+  --border-radius-sm: 4px;
+
+  /* --- Shadow --- */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 2px 8px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 4px 16px rgba(0, 0, 0, 0.12);
+}

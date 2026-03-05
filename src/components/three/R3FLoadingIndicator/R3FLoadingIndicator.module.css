@@ -1,0 +1,15 @@
+.spinner {
+  color: var(--color-primary);
+}
+
+.spinnerIcon {
+  width: calc(var(--font-size-xl) * 3);
+  height: calc(var(--font-size-xl) * 3);
+  animation: spin 0.9s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

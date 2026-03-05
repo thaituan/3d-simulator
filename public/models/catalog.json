@@ -1,0 +1,736 @@
+{
+  "models": [
+    {
+      "productCode": "2110300007864-2110300016744",
+      "seriesId": "MS02",
+      "modelPath": "/models/2110300007864-2110300016744.glb",
+      "displayName": "MS02 2P ハイタイプ スリム肘 YGR",
+      "category": "sofa",
+      "attributes": {
+        "size": "2P",
+        "legType": "ハイタイプ",
+        "armType": "スリム肘",
+        "color": "YGR"
+      }
+    },
+    {
+      "productCode": "2110300007871-2110300016751",
+      "seriesId": "MS02",
+      "modelPath": "/models/2110300007871-2110300016751.glb",
+      "displayName": "MS02 2P ハイタイプ スリム肘 DBL",
+      "category": "sofa",
+      "attributes": {
+        "size": "2P",
+        "legType": "ハイタイプ",
+        "armType": "スリム肘",
+        "color": "DBL"
+      }
+    },
+    {
+      "productCode": "2110300007826-2110300016867",
+      "seriesId": "MS02",
+      "modelPath": "/models/2110300007826-2110300016867.glb",
+      "displayName": "MS02 2P ハイタイプ ミドル肘 BE",
+      "category": "sofa",
+      "attributes": {
+        "size": "2P",
+        "legType": "ハイタイプ",
+        "armType": "ミドル肘",
+        "color": "BE"
+      }
+    },
+    {
+      "productCode": "2110300007833-2110300016874",
+      "seriesId": "MS02",
+      "modelPath": "/models/2110300007833-2110300016874.glb",
+      "displayName": "MS02 2P ハイタイプ ミドル肘 BR",
+      "category": "sofa",
+      "attributes": {
+        "size": "2P",
+        "legType": "ハイタイプ",
+        "armType": "ミドル肘",
+        "color": "BR"
+      }
+    },
+    {
+      "productCode": "2110300007802-2110300017000",
+      "seriesId": "MS02",
+      "modelPath": "/models/2110300007802-2110300017000.glb",
+      "displayName": "MS02 2P ハイタイプ ワイド肘 LGY",
+      "category": "sofa",
+      "attributes": {
+        "size": "2P",
+        "legType": "ハイタイプ",
+        "armType": "ワイド肘",
+        "color": "LGY"
+      }
+    },
+    {
+      "productCode": "2110300007819-2110300017017",
+      "seriesId": "MS02",
+      "modelPath": "/models/2110300007819-2110300017017.glb",
+      "displayName": "MS02 2P ハイタイプ ワイド肘 MGY",
+      "category": "sofa",
+      "attributes": {
+        "size": "2P",
+        "legType": "ハイタイプ",
+        "armType": "ワイド肘",
+        "color": "MGY"
+      }
+    },
+    {
+      "productCode": "2110300007840-2110300046720",
+      "seriesId": "MS02",
+      "modelPath": "/models/2110300007840-2110300046720.glb",
+      "displayName": "MS02 2P ロータイプ スリム肘 RE",
+      "category": "sofa",
+      "attributes": {
+        "size": "2P",
+        "legType": "ロータイプ",
+        "armType": "スリム肘",
+        "color": "RE"
+      }
+    },
+    {
+      "productCode": "2110300007857-2110300046737",
+      "seriesId": "MS02",
+      "modelPath": "/models/2110300007857-2110300046737.glb",
+      "displayName": "MS02 2P ロータイプ スリム肘 YE",
+      "category": "sofa",
+      "attributes": {
+        "size": "2P",
+        "legType": "ロータイプ",
+        "armType": "スリム肘",
+        "color": "YE"
+      }
+    },
+    {
+      "productCode": "2110300007802-2110300046843",
+      "seriesId": "MS02",
+      "modelPath": "/models/2110300007802-2110300046843.glb",
+      "displayName": "MS02 2P ロータイプ ミドル肘 LGY",
+      "category": "sofa",
+      "attributes": {
+        "size": "2P",
+        "legType": "ロータイプ",
+        "armType": "ミドル肘",
+        "color": "LGY"
+      }
+    },
+    {
+      "productCode": "2110300007819-2110300046850",
+      "seriesId": "MS02",
+      "modelPath": "/models/2110300007819-2110300046850.glb",
+      "displayName": "MS02 2P ロータイプ ミドル肘 MGY",
+      "category": "sofa",
+      "attributes": {
+        "size": "2P",
+        "legType": "ロータイプ",
+        "armType": "ミドル肘",
+        "color": "MGY"
+      }
+    },
+    {
+      "productCode": "2110300007864-2110300047062",
+      "seriesId": "MS02",
+      "modelPath": "/models/2110300007864-2110300047062.glb",
+      "displayName": "MS02 2P ロータイプ ワイド肘 YGR",
+      "category": "sofa",
+      "attributes": {
+        "size": "2P",
+        "legType": "ロータイプ",
+        "armType": "ワイド肘",
+        "color": "YGR"
+      }
+    },
+    {
+      "productCode": "2110300007871-2110300047079",
+      "seriesId": "MS02",
+      "modelPath": "/models/2110300007871-2110300047079.glb",
+      "displayName": "MS02 2P ロータイプ ワイド肘 DBL",
+      "category": "sofa",
+      "attributes": {
+        "size": "2P",
+        "legType": "ロータイプ",
+        "armType": "ワイド肘",
+        "color": "DBL"
+      }
+    },
+    {
+      "productCode": "2110300007802-2110300026683",
+      "seriesId": "MS02",
+      "modelPath": "/models/2110300007802-2110300026683.glb",
+      "displayName": "MS02 2P 標準タイプ スリム肘 LGY",
+      "category": "sofa",
+      "attributes": {
+        "size": "2P",
+        "legType": "標準タイプ",
+        "armType": "スリム肘",
+        "color": "LGY"
+      }
+    },
+    {
+      "productCode": "2110300007819-2110300026690",
+      "seriesId": "MS02",
+      "modelPath": "/models/2110300007819-2110300026690.glb",
+      "displayName": "MS02 2P 標準タイプ スリム肘 MGY",
+      "category": "sofa",
+      "attributes": {
+        "size": "2P",
+        "legType": "標準タイプ",
+        "armType": "スリム肘",
+        "color": "MGY"
+      }
+    },
+    {
+      "productCode": "2110300007826-2110300036706",
+      "seriesId": "MS02",
+      "modelPath": "/models/2110300007826-2110300036706.glb",
+      "displayName": "MS02 2P 標準タイプ スリム肘 BE",
+      "category": "sofa",
+      "attributes": {
+        "size": "2P",
+        "legType": "標準タイプ",
+        "armType": "スリム肘",
+        "color": "BE"
+      }
+    },
+    {
+      "productCode": "2110300007833-2110300036713",
+      "seriesId": "MS02",
+      "modelPath": "/models/2110300007833-2110300036713.glb",
+      "displayName": "MS02 2P 標準タイプ スリム肘 BR",
+      "category": "sofa",
+      "attributes": {
+        "size": "2P",
+        "legType": "標準タイプ",
+        "armType": "スリム肘",
+        "color": "BR"
+      }
+    },
+    {
+      "productCode": "2110300007840-2110300026881",
+      "seriesId": "MS02",
+      "modelPath": "/models/2110300007840-2110300026881.glb",
+      "displayName": "MS02 2P 標準タイプ ミドル肘 RE",
+      "category": "sofa",
+      "attributes": {
+        "size": "2P",
+        "legType": "標準タイプ",
+        "armType": "ミドル肘",
+        "color": "RE"
+      }
+    },
+    {
+      "productCode": "2110300007857-2110300026898",
+      "seriesId": "MS02",
+      "modelPath": "/models/2110300007857-2110300026898.glb",
+      "displayName": "MS02 2P 標準タイプ ミドル肘 YE",
+      "category": "sofa",
+      "attributes": {
+        "size": "2P",
+        "legType": "標準タイプ",
+        "armType": "ミドル肘",
+        "color": "YE"
+      }
+    },
+    {
+      "productCode": "2110300007864-2110300036904",
+      "seriesId": "MS02",
+      "modelPath": "/models/2110300007864-2110300036904.glb",
+      "displayName": "MS02 2P 標準タイプ ミドル肘 YGR",
+      "category": "sofa",
+      "attributes": {
+        "size": "2P",
+        "legType": "標準タイプ",
+        "armType": "ミドル肘",
+        "color": "YGR"
+      }
+    },
+    {
+      "productCode": "2110300007871-2110300036911",
+      "seriesId": "MS02",
+      "modelPath": "/models/2110300007871-2110300036911.glb",
+      "displayName": "MS02 2P 標準タイプ ミドル肘 DBL",
+      "category": "sofa",
+      "attributes": {
+        "size": "2P",
+        "legType": "標準タイプ",
+        "armType": "ミドル肘",
+        "color": "DBL"
+      }
+    },
+    {
+      "productCode": "2110300007826-2110300027024",
+      "seriesId": "MS02",
+      "modelPath": "/models/2110300007826-2110300027024.glb",
+      "displayName": "MS02 2P 標準タイプ ワイド肘 BE",
+      "category": "sofa",
+      "attributes": {
+        "size": "2P",
+        "legType": "標準タイプ",
+        "armType": "ワイド肘",
+        "color": "BE"
+      }
+    },
+    {
+      "productCode": "2110300007833-2110300027031",
+      "seriesId": "MS02",
+      "modelPath": "/models/2110300007833-2110300027031.glb",
+      "displayName": "MS02 2P 標準タイプ ワイド肘 BR",
+      "category": "sofa",
+      "attributes": {
+        "size": "2P",
+        "legType": "標準タイプ",
+        "armType": "ワイド肘",
+        "color": "BR"
+      }
+    },
+    {
+      "productCode": "2110300007840-2110300037048",
+      "seriesId": "MS02",
+      "modelPath": "/models/2110300007840-2110300037048.glb",
+      "displayName": "MS02 2P 標準タイプ ワイド肘 RE",
+      "category": "sofa",
+      "attributes": {
+        "size": "2P",
+        "legType": "標準タイプ",
+        "armType": "ワイド肘",
+        "color": "RE"
+      }
+    },
+    {
+      "productCode": "2110300007857-2110300037055",
+      "seriesId": "MS02",
+      "modelPath": "/models/2110300007857-2110300037055.glb",
+      "displayName": "MS02 2P 標準タイプ ワイド肘 YE",
+      "category": "sofa",
+      "attributes": {
+        "size": "2P",
+        "legType": "標準タイプ",
+        "armType": "ワイド肘",
+        "color": "YE"
+      }
+    },
+    {
+      "productCode": "2110300007369-2110300016720",
+      "seriesId": "MS02",
+      "modelPath": "/models/2110300007369-2110300016720.glb",
+      "displayName": "MS02 3P ハイタイプ スリム肘 RE",
+      "category": "sofa",
+      "attributes": {
+        "size": "3P",
+        "legType": "ハイタイプ",
+        "armType": "スリム肘",
+        "color": "RE"
+      }
+    },
+    {
+      "productCode": "2110300007376-2110300016737",
+      "seriesId": "MS02",
+      "modelPath": "/models/2110300007376-2110300016737.glb",
+      "displayName": "MS02 3P ハイタイプ スリム肘 YE",
+      "category": "sofa",
+      "attributes": {
+        "size": "3P",
+        "legType": "ハイタイプ",
+        "armType": "スリム肘",
+        "color": "YE"
+      }
+    },
+    {
+      "productCode": "2110300007321-2110300016843",
+      "seriesId": "MS02",
+      "modelPath": "/models/2110300007321-2110300016843.glb",
+      "displayName": "MS02 3P ハイタイプ ミドル肘 LGY",
+      "category": "sofa",
+      "attributes": {
+        "size": "3P",
+        "legType": "ハイタイプ",
+        "armType": "ミドル肘",
+        "color": "LGY"
+      }
+    },
+    {
+      "productCode": "2110300007338-2110300016850",
+      "seriesId": "MS02",
+      "modelPath": "/models/2110300007338-2110300016850.glb",
+      "displayName": "MS02 3P ハイタイプ ミドル肘 MGY",
+      "category": "sofa",
+      "attributes": {
+        "size": "3P",
+        "legType": "ハイタイプ",
+        "armType": "ミドル肘",
+        "color": "MGY"
+      }
+    },
+    {
+      "productCode": "2110300007383-2110300017062",
+      "seriesId": "MS02",
+      "modelPath": "/models/2110300007383-2110300017062.glb",
+      "displayName": "MS02 3P ハイタイプ ワイド肘 YGR",
+      "category": "sofa",
+      "attributes": {
+        "size": "3P",
+        "legType": "ハイタイプ",
+        "armType": "ワイド肘",
+        "color": "YGR"
+      }
+    },
+    {
+      "productCode": "2110300007390-2110300017079",
+      "seriesId": "MS02",
+      "modelPath": "/models/2110300007390-2110300017079.glb",
+      "displayName": "MS02 3P ハイタイプ ワイド肘 DBL",
+      "category": "sofa",
+      "attributes": {
+        "size": "3P",
+        "legType": "ハイタイプ",
+        "armType": "ワイド肘",
+        "color": "DBL"
+      }
+    },
+    {
+      "productCode": "2110300007345-2110300046706",
+      "seriesId": "MS02",
+      "modelPath": "/models/2110300007345-2110300046706.glb",
+      "displayName": "MS02 3P ロータイプ スリム肘 BE",
+      "category": "sofa",
+      "attributes": {
+        "size": "3P",
+        "legType": "ロータイプ",
+        "armType": "スリム肘",
+        "color": "BE"
+      }
+    },
+    {
+      "productCode": "2110300007352-2110300046713",
+      "seriesId": "MS02",
+      "modelPath": "/models/2110300007352-2110300046713.glb",
+      "displayName": "MS02 3P ロータイプ スリム肘 BR",
+      "category": "sofa",
+      "attributes": {
+        "size": "3P",
+        "legType": "ロータイプ",
+        "armType": "スリム肘",
+        "color": "BR"
+      }
+    },
+    {
+      "productCode": "2110300007383-2110300046904",
+      "seriesId": "MS02",
+      "modelPath": "/models/2110300007383-2110300046904.glb",
+      "displayName": "MS02 3P ロータイプ ミドル肘 YGR",
+      "category": "sofa",
+      "attributes": {
+        "size": "3P",
+        "legType": "ロータイプ",
+        "armType": "ミドル肘",
+        "color": "YGR"
+      }
+    },
+    {
+      "productCode": "2110300007390-2110300046911",
+      "seriesId": "MS02",
+      "modelPath": "/models/2110300007390-2110300046911.glb",
+      "displayName": "MS02 3P ロータイプ ミドル肘 DBL",
+      "category": "sofa",
+      "attributes": {
+        "size": "3P",
+        "legType": "ロータイプ",
+        "armType": "ミドル肘",
+        "color": "DBL"
+      }
+    },
+    {
+      "productCode": "2110300007369-2110300047048",
+      "seriesId": "MS02",
+      "modelPath": "/models/2110300007369-2110300047048.glb",
+      "displayName": "MS02 3P ロータイプ ワイド肘 RE",
+      "category": "sofa",
+      "attributes": {
+        "size": "3P",
+        "legType": "ロータイプ",
+        "armType": "ワイド肘",
+        "color": "RE"
+      }
+    },
+    {
+      "productCode": "2110300007376-2110300047055",
+      "seriesId": "MS02",
+      "modelPath": "/models/2110300007376-2110300047055.glb",
+      "displayName": "MS02 3P ロータイプ ワイド肘 YE",
+      "category": "sofa",
+      "attributes": {
+        "size": "3P",
+        "legType": "ロータイプ",
+        "armType": "ワイド肘",
+        "color": "YE"
+      }
+    },
+    {
+      "productCode": "2110300007321-2110300036683",
+      "seriesId": "MS02",
+      "modelPath": "/models/2110300007321-2110300036683.glb",
+      "displayName": "MS02 3P 標準タイプ スリム肘 LGY",
+      "category": "sofa",
+      "attributes": {
+        "size": "3P",
+        "legType": "標準タイプ",
+        "armType": "スリム肘",
+        "color": "LGY"
+      }
+    },
+    {
+      "productCode": "2110300007338-2110300036690",
+      "seriesId": "MS02",
+      "modelPath": "/models/2110300007338-2110300036690.glb",
+      "displayName": "MS02 3P 標準タイプ スリム肘 MGY",
+      "category": "sofa",
+      "attributes": {
+        "size": "3P",
+        "legType": "標準タイプ",
+        "armType": "スリム肘",
+        "color": "MGY"
+      }
+    },
+    {
+      "productCode": "2110300007383-2110300026744",
+      "seriesId": "MS02",
+      "modelPath": "/models/2110300007383-2110300026744.glb",
+      "displayName": "MS02 3P 標準タイプ スリム肘 YGR",
+      "category": "sofa",
+      "attributes": {
+        "size": "3P",
+        "legType": "標準タイプ",
+        "armType": "スリム肘",
+        "color": "YGR"
+      }
+    },
+    {
+      "productCode": "2110300007390-2110300026751",
+      "seriesId": "MS02",
+      "modelPath": "/models/2110300007390-2110300026751.glb",
+      "displayName": "MS02 3P 標準タイプ スリム肘 DBL",
+      "category": "sofa",
+      "attributes": {
+        "size": "3P",
+        "legType": "標準タイプ",
+        "armType": "スリム肘",
+        "color": "DBL"
+      }
+    },
+    {
+      "productCode": "2110300007345-2110300026867",
+      "seriesId": "MS02",
+      "modelPath": "/models/2110300007345-2110300026867.glb",
+      "displayName": "MS02 3P 標準タイプ ミドル肘 BE",
+      "category": "sofa",
+      "attributes": {
+        "size": "3P",
+        "legType": "標準タイプ",
+        "armType": "ミドル肘",
+        "color": "BE"
+      }
+    },
+    {
+      "productCode": "2110300007352-2110300026874",
+      "seriesId": "MS02",
+      "modelPath": "/models/2110300007352-2110300026874.glb",
+      "displayName": "MS02 3P 標準タイプ ミドル肘 BR",
+      "category": "sofa",
+      "attributes": {
+        "size": "3P",
+        "legType": "標準タイプ",
+        "armType": "ミドル肘",
+        "color": "BR"
+      }
+    },
+    {
+      "productCode": "2110300007369-2110300036881",
+      "seriesId": "MS02",
+      "modelPath": "/models/2110300007369-2110300036881.glb",
+      "displayName": "MS02 3P 標準タイプ ミドル肘 RE",
+      "category": "sofa",
+      "attributes": {
+        "size": "3P",
+        "legType": "標準タイプ",
+        "armType": "ミドル肘",
+        "color": "RE"
+      }
+    },
+    {
+      "productCode": "2110300007376-2110300036898",
+      "seriesId": "MS02",
+      "modelPath": "/models/2110300007376-2110300036898.glb",
+      "displayName": "MS02 3P 標準タイプ ミドル肘 YE",
+      "category": "sofa",
+      "attributes": {
+        "size": "3P",
+        "legType": "標準タイプ",
+        "armType": "ミドル肘",
+        "color": "YE"
+      }
+    },
+    {
+      "productCode": "2110300007321-2110300027000",
+      "seriesId": "MS02",
+      "modelPath": "/models/2110300007321-2110300027000.glb",
+      "displayName": "MS02 3P 標準タイプ ワイド肘 LGY",
+      "category": "sofa",
+      "attributes": {
+        "size": "3P",
+        "legType": "標準タイプ",
+        "armType": "ワイド肘",
+        "color": "LGY"
+      }
+    },
+    {
+      "productCode": "2110300007338-2110300027017",
+      "seriesId": "MS02",
+      "modelPath": "/models/2110300007338-2110300027017.glb",
+      "displayName": "MS02 3P 標準タイプ ワイド肘 MGY",
+      "category": "sofa",
+      "attributes": {
+        "size": "3P",
+        "legType": "標準タイプ",
+        "armType": "ワイド肘",
+        "color": "MGY"
+      }
+    },
+    {
+      "productCode": "2110300007345-2110300037024",
+      "seriesId": "MS02",
+      "modelPath": "/models/2110300007345-2110300037024.glb",
+      "displayName": "MS02 3P 標準タイプ ワイド肘 BE",
+      "category": "sofa",
+      "attributes": {
+        "size": "3P",
+        "legType": "標準タイプ",
+        "armType": "ワイド肘",
+        "color": "BE"
+      }
+    },
+    {
+      "productCode": "2110300007352-2110300037031",
+      "seriesId": "MS02",
+      "modelPath": "/models/2110300007352-2110300037031.glb",
+      "displayName": "MS02 3P 標準タイプ ワイド肘 BR",
+      "category": "sofa",
+      "attributes": {
+        "size": "3P",
+        "legType": "標準タイプ",
+        "armType": "ワイド肘",
+        "color": "BR"
+      }
+    },
+    {
+      "productCode": "2110100000102",
+      "seriesId": "SJ604",
+      "modelPath": "/models/2110100000102.glb",
+      "displayName": "ダイニングテーブル(半円形SJ604 135 LBR)",
+      "category": "dining-table",
+      "attributes": {
+        "size": "135",
+        "color": "LBR"
+      }
+    },
+    {
+      "productCode": "2110100000119",
+      "seriesId": "SJ604",
+      "modelPath": "/models/2110100000119.glb",
+      "displayName": "ダイニングテーブル(半円形SJ604 135 MBR)",
+      "category": "dining-table",
+      "attributes": {
+        "size": "135",
+        "color": "MBR"
+      }
+    },
+    {
+      "productCode": "3000591",
+      "seriesId": "MM05",
+      "modelPath": "/models/3000591.glb",
+      "displayName": "サイドボード(MM05 80 LBR)",
+      "category": "sideboard",
+      "attributes": {
+        "size": "80",
+        "color": "LBR"
+      }
+    },
+    {
+      "productCode": "3000592",
+      "seriesId": "MM05",
+      "modelPath": "/models/3000592.glb",
+      "displayName": "サイドボード(MM05 80 MBR)",
+      "category": "sideboard",
+      "attributes": {
+        "size": "80",
+        "color": "MBR"
+      }
+    },
+    {
+      "productCode": "3000593",
+      "seriesId": "MM05",
+      "modelPath": "/models/3000593.glb",
+      "displayName": "サイドボード(MM05 80 GY)",
+      "category": "sideboard",
+      "attributes": {
+        "size": "80",
+        "color": "GY"
+      }
+    },
+    {
+      "productCode": "3000594",
+      "seriesId": "MM05",
+      "modelPath": "/models/3000594.glb",
+      "displayName": "サイドボード(MM05 120 LBR)",
+      "category": "sideboard",
+      "attributes": {
+        "size": "120",
+        "color": "LBR"
+      }
+    },
+    {
+      "productCode": "3000595",
+      "seriesId": "MM05",
+      "modelPath": "/models/3000595.glb",
+      "displayName": "サイドボード(MM05 120 MBR)",
+      "category": "sideboard",
+      "attributes": {
+        "size": "120",
+        "color": "MBR"
+      }
+    },
+    {
+      "productCode": "3000596",
+      "seriesId": "MM05",
+      "modelPath": "/models/3000596.glb",
+      "displayName": "サイドボード(MM05 120 GY)",
+      "category": "sideboard",
+      "attributes": {
+        "size": "120",
+        "color": "GY"
+      }
+    },
+    {
+      "productCode": "4000323",
+      "seriesId": "TD301",
+      "modelPath": "/models/4000323.glb",
+      "displayName": "ダイニングチェア(TD301 DGY)",
+      "category": "dining-chair",
+      "attributes": {
+        "color": "DGY"
+      }
+    },
+    {
+      "productCode": "4000421",
+      "seriesId": "TD301",
+      "modelPath": "/models/4000421.glb",
+      "displayName": "ダイニングチェア(TD301 MO)",
+      "category": "dining-chair",
+      "attributes": {
+        "color": "MO"
+      }
+    }
+  ]
+}
