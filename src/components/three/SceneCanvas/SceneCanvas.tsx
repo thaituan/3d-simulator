@@ -1,10 +1,10 @@
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Grid } from "@react-three/drei";
-import type { ReactNode } from "react";
+import React from "react";
 import styles from "./SceneCanvas.module.css";
 
 type SceneCanvasProps = {
-  children?: ReactNode;
+  children?: React.ReactNode;
   lightColor?: string; // ライトの色（未指定時はシーン背景トークン）
   lightPower?: number; // ライトの強度（0-100%）デフォルトは100
   orbitEnabled?: boolean; // OrbitControlsの有効/無効

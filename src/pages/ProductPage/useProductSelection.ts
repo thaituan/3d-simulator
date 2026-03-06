@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react'
+import { useState, useMemo } from 'react'
 import { useModelCatalog } from '@/hooks/useModelCatalog'
 import type { ModelEntry } from '@/types'
 import {

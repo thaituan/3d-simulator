@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import React from "react";
 import type { ModelCatalog } from "@/types";
 
 /**
@@ -13,11 +13,11 @@ import type { ModelCatalog } from "@/types";
  */
 
 export function useModelCatalog() {
-  const [catalog, setCatalog] = useState<ModelCatalog | null>(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<Error | null>(null);
+  const [catalog, setCatalog] = React.useState<ModelCatalog | null>(null);
+  const [loading, setLoading] = React.useState(true);
+  const [error, setError] = React.useState<Error | null>(null);
 
-  useEffect(() => {
+  React.useEffect(() => {
     // catalog.json を fetch で読み込み
     fetch("/models/catalog.json")
       .then((res) => {

@@ -1,4 +1,4 @@
-import { useRef, type ReactNode } from "react";
+import { useRef } from "react";
 import type { Group } from "three";
 import { useBoundingBox } from "@/hooks/useBoundingBox";
 import DimensionArrows from "@/components/three/DimensionArrows";
@@ -11,7 +11,7 @@ type DimensionGroupProps = {
   /** 寸法線のオフセット距離（モデルからどれだけ離すか） */
   offset?: number;
   /** 計測対象の3Dオブジェクト（Model 等） */
-  children: ReactNode;
+  children: React.ReactNode;
 };
 
 /**

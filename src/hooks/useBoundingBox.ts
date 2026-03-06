@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import React from "react";
 import { Box3, Vector3, Object3D } from "three";
 import { useFrame } from "@react-three/fiber";
 import type { RefObject } from "react";
@@ -27,11 +27,11 @@ type BoundingBoxResult = {
 export function useBoundingBox(
   ref: RefObject<Object3D | null>,
 ): BoundingBoxResult {
-  const [size, setSize] = useState<Vector3 | null>(null);
-  const [center, setCenter] = useState<Vector3 | null>(null);
+  const [size, setSize] = React.useState<Vector3 | null>(null);
+  const [center, setCenter] = React.useState<Vector3 | null>(null);
 
   // 前回計測時の子構成シグネチャ（モデル切り替え・遅延ロード完了を検知）
-  const lastMeasuredSignature = useRef<string>("");
+  const lastMeasuredSignature = React.useRef<string>("");
 
   const getChildrenSignature = (target: Object3D): string => {
     return target.children

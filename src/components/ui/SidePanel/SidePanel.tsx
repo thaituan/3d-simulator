@@ -1,9 +1,8 @@
-import type { ReactNode } from 'react'
 import styles from './SidePanel.module.css'
 
 type SidePanelProps = {
   title: string
-  children?: ReactNode
+  children?: React.ReactNode
 }
 
 /**

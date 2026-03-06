@@ -1,12 +1,12 @@
-import { useState, type ReactNode } from 'react'
+import React, { useState } from 'react'
 import Header from '@/components/layout/Header'
 import styles from './SimulatorLayout.module.css'
 
 type SimulatorLayoutProps = {
   title: string
-  canvasContent: ReactNode
-  sidePanelContent: ReactNode
-  adminPanelContent?: ReactNode
+  canvasContent: React.ReactNode
+  sidePanelContent: React.ReactNode
+  adminPanelContent?: React.ReactNode
 }
 
 export default function SimulatorLayout({
