@@ -121,7 +121,8 @@ components/ui/SidePanel/
 | R3Fシーン内のオブジェクト      | `components/three/`  |
 | レイアウト（Header, Layout等） | `components/layout/` |
 | ボタン・パネル等汎用UI         | `components/ui/`     |
-| 3Dモデルファイル（GLB/GLTF）   | `public/models/`     |
+| 3Dモデルファイル（GLB/GLTF）   | `public/models/glb/` (subdir used for app) |
+| USDZファイル               | `public/models/usdz/` |
 | 画像                           | `public/textures/`   |
 
 ### インポート
@@ -146,7 +147,7 @@ components/ui/SidePanel/
 
 7. **Canvas は `SceneCanvas` コンポーネントを使用** — 個別に `<Canvas>` を書かない
 8. **drei を活用** — コントロール、ヘルパー、ローダー等は drei のコンポーネント/フックを優先する
-9. **3Dモデルは `public/models/` に GLB 形式** （デジ販から渡されたFBXを `fbx2gltf` で変換）で配置する。
+9. **3Dモデルは `public/models/glb/` サブディレクトリに GLB 形式** （デジ販から渡されたFBXを `fbx2gltf` で変換）で配置する。USDZファイルは `public/models/usdz/` に保存し、AR時に参照される。
 10. **パフォーマンス** — 3Dシーン内のコンポーネントでは不要な再レンダリングを避ける。React.memo、useMemo を適切に使用する
 
 ### コード品質

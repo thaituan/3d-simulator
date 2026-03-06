@@ -1,4 +1,4 @@
-import { mkdtemp, readdir, rm, writeFile } from 'node:fs/promises';
+import { mkdtemp, readdir, rm, writeFile, mkdir } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import { join, resolve, dirname, extname, basename } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -10,6 +10,8 @@ const __dirname = dirname(__filename);
 const PROJECT_ROOT = resolve(__dirname, '..');
 
 const MODELS_DIR = join(PROJECT_ROOT, 'public', 'models');
+// USDZ files live next to glb assets but in a separate directory
+const USDZ_DIR = join(PROJECT_ROOT, 'public', 'models', 'usdz');
 
 function parseArgs() {
   const args = process.argv.slice(2);
@@ -44,7 +46,7 @@ function printHelp() {
   console.log('');
   console.log('Usage:');
   console.log('  npm run convert-usdz');
-  console.log('  npm run convert-usdz -- --input public/models/xxxx.glb');
+  console.log('  npm run convert-usdz -- --input public/models/glb/xxxx.glb');
   console.log('  npm run convert-usdz -- --overwrite');
   console.log('');
   console.log('Options:');
@@ -129,6 +131,9 @@ async function main() {
 
   await ensureBlenderAvailable();
 
+  // make sure USDZ output directory exists
+  await mkdir(USDZ_DIR, { recursive: true });
+
   let targets = [];
 
   if (input) {
@@ -141,6 +146,7 @@ async function main() {
     }
     targets = [absoluteInput];
   } else {
+    // recursively search under models directory (includes glb subfolder)
     targets = await collectGlbFiles(MODELS_DIR);
   }
 
@@ -158,7 +164,11 @@ async function main() {
     console.log(`Found ${targets.length} GLB file(s).`);
 
     for (const glbPath of targets) {
-      const usdzPath = glbPath.replace(/\.glb$/i, '.usdz');
+      // place output in /models/usdz, mirroring the filename
+      // if the input path includes "/models/glb/", convert that segment to "/models/usdz/" as well
+      let usdzPath = glbPath.replace(/\.glb$/i, '.usdz');
+      usdzPath = usdzPath.replace(/\/models\/glb\//, '/models/usdz/');
+
 
       if (!overwrite && existsSync(usdzPath)) {
         console.log(`- Skip (exists): ${basename(usdzPath)}`);

@@ -72,15 +72,15 @@ export default function RoomCoordinator() {
   const [sofas, setSofas] = useState<SofaItem[]>([])
   const [isTransforming, setIsTransforming] = useState(false)
   const [selectedId, setSelectedId] = useState<number | null>(null)
-  // list of room model files under public/models/room
+  // room models were moved into the glb directory along with others
   const roomFiles = [
-    '/models/room/room.glb',
-    '/models/room/room2.glb',
-    '/models/room/room3.glb',
-    '/models/room/room4.glb',
+    '/models/glb/room.glb',
+    '/models/glb/room2.glb',
+    '/models/glb/room3.glb',
+    '/models/glb/room4.glb',
   ]
   const [currentRoom, setCurrentRoom] = useState<string>(
-    roomFiles.length > 0 ? roomFiles[0] : '/models/room/room.glb',
+    roomFiles.length > 0 ? roomFiles[0] : '/models/glb/room.glb',
   )
 
   const changeRoom = (path: string) => {

@@ -45,7 +45,13 @@ export function useModelCatalog() {
 
     // models 配列から商品コードが一致するものを検索
     const model = catalog.models.find((m) => m.productCode === productCode);
-    return model?.modelPath;
+
+    // assets were moved into /models/glb; the catalog still points to /models/
+    // so rewrite the path if necessary.
+    if (model?.modelPath) {
+      return model.modelPath.replace(/^\/models\//, '/models/glb/');
+    }
+    return undefined;
   };
 
   return { catalog, loading, error, getModelPath };

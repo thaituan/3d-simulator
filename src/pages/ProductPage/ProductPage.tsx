@@ -47,7 +47,10 @@ export default function ProductPage() {
 
   const iosSrc = useMemo(() => {
     if (!currentModelPath || !currentModelPath.endsWith('.glb')) return undefined
-    return currentModelPath.replace(/\.glb$/i, '.usdz')
+    // convert "/models/glb/xxx.glb" -> "/models/usdz/xxx.usdz"
+    let url = currentModelPath.replace(/\.glb$/i, '.usdz')
+    url = url.replace(/\/models\/glb\//, '/models/usdz/')
+    return url
   }, [currentModelPath])
 
   useEffect(() => {

@@ -50,6 +50,8 @@ const PROJECT_ROOT = resolve(__dirname, '..');
 // 入出力ディレクトリ
 const TEMP_DIR = join(PROJECT_ROOT, 'temp', '3dModel');
 const OUTPUT_DIR = join(PROJECT_ROOT, 'public', 'models');
+// place GLB assets in a subfolder so runtime can reference /models/glb/
+const GLB_DIR = join(OUTPUT_DIR, 'glb');
 const TEXTURES_DIR = join(OUTPUT_DIR, 'textures', 'MS02');
 
 // ─── MS02ソファのカラーコード一覧 ───
@@ -326,7 +328,8 @@ async function parseOtherModels() {
  */
 async function convertOrCopy(model) {
   const outputFileName = `${model.productCode}.glb`;
-  const outputPath = join(OUTPUT_DIR, outputFileName);
+  const outputPath = join(GLB_DIR, outputFileName);
+
 
   if (model.sourceType === 'glb') {
     // すでにGLB形式ならそのままコピー
@@ -394,7 +397,7 @@ function buildCatalog(models) {
     models: models.map((m) => ({
       productCode: m.productCode,
       seriesId: m.seriesId,
-      modelPath: `/models/${m.productCode}.glb`,
+      modelPath: `/models/glb/${m.productCode}.glb`,
       displayName: m.displayName,
       category: m.category,
       attributes: m.attributes,
@@ -411,6 +414,7 @@ async function main() {
 
   // 出力ディレクトリの準備
   await ensureDir(OUTPUT_DIR);
+  await ensureDir(GLB_DIR);
 
   // ── Step 1: モデル情報のパース ──
   console.log('📂 モデル情報をパース中...');
@@ -455,7 +459,7 @@ async function main() {
   console.log('📋 catalog.json を生成中...');
   // 変換に失敗したモデルは除外する
   const successModels = allModels.filter((m) => {
-    const outputPath = join(OUTPUT_DIR, `${m.productCode}.glb`);
+    const outputPath = join(GLB_DIR, `${m.productCode}.glb`);
     return existsSync(outputPath);
   });
   const catalog = buildCatalog(successModels);

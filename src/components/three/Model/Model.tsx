@@ -8,7 +8,7 @@ import { useModelCatalog } from "@/hooks/useModelCatalog";
  *
  * 使い方:
  * 1. 商品コード指定: <Model productCode="2110300007321-2110300016843" />
- * 2. パス直接指定: <Model modelPath="/models/xxx.glb" />
+ * 2. パス直接指定: <Model modelPath="/models/glb/xxx.glb" />
  *
  * パス直接指定は商品コードがつかないオブジェクトを自由に動かしたいときのために残している。
  * 例: 棚を自由に移動できるNクリックなどのシミュレーションや、ドアや窓の生成。
