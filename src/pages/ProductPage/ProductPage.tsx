@@ -37,12 +37,47 @@ export default function ProductPage() {
   const [texturePath, setTexturePath] = useState<string | null>(null)
   const [showAR, setShowAR] = useState(false)
   const [arHint, setArHint] = useState<string | null>(null)
+  const [iosUsdAvailable, setIosUsdAvailable] = useState<boolean | null>(null)
   const modelViewerRef = useRef<HTMLElement | null>(null)
+
+  const isIOSDevice = useMemo(() => {
+    const ua = navigator.userAgent
+    return /iPad|iPhone|iPod/.test(ua) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1)
+  }, [])
 
   const iosSrc = useMemo(() => {
     if (!currentModelPath || !currentModelPath.endsWith('.glb')) return undefined
     return currentModelPath.replace(/\.glb$/i, '.usdz')
   }, [currentModelPath])
+
+  useEffect(() => {
+    if (!isIOSDevice) {
+      setIosUsdAvailable(null)
+      return
+    }
+
+    if (!iosSrc) {
+      setIosUsdAvailable(false)
+      return
+    }
+
+    let active = true
+    setIosUsdAvailable(null)
+
+    fetch(iosSrc, { method: 'HEAD' })
+      .then((response) => {
+        if (!active) return
+        setIosUsdAvailable(response.ok)
+      })
+      .catch(() => {
+        if (!active) return
+        setIosUsdAvailable(false)
+      })
+
+    return () => {
+      active = false
+    }
+  }, [isIOSDevice, iosSrc])
 
   useEffect(() => {
     if (!showAR) return
@@ -154,15 +189,19 @@ export default function ProductPage() {
             <button
               className={styles.arButton}
               onClick={() => {
+                if (isIOSDevice && iosUsdAvailable === false) {
+                  setArHint('Thiết bị iOS cần file .usdz tương ứng để mở AR. Hiện model này chưa có file .usdz khả dụng.')
+                  return
+                }
                 setArHint(null)
                 setShowAR(true)
               }}
-              disabled={!currentModelPath}
+              disabled={!currentModelPath || (isIOSDevice && iosUsdAvailable === false)}
             >
               View in AR
             </button>
             <p className={styles.arHelpText}>
-              Android: cần Google Scene Viewer/WebXR. iPhone/iPad: cần file .usdz để mở Quick Look AR.
+              Android: cần Google Scene Viewer/WebXR. iPhone/iPad: dùng Quick Look và bắt buộc có file .usdz.
             </p>
           </div>
         </SidePanel>
@@ -185,7 +224,7 @@ export default function ProductPage() {
             <model-viewer
               ref={modelViewerRef as never}
               src={currentModelPath}
-              ios-src={iosSrc}
+              ios-src={isIOSDevice ? iosSrc : undefined}
               alt="Product for AR"
               ar
               ar-modes="webxr scene-viewer quick-look"

@@ -8,7 +8,8 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "convert-models": "node scripts/convert-models.mjs"
+    "convert-models": "node scripts/convert-models.mjs",
+    "convert-usdz": "node scripts/convert-usdz.mjs"
   },
   "dependencies": {
     "@react-three/drei": "^10.7.7",
