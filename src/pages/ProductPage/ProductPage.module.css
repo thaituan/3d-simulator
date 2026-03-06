@@ -80,6 +80,12 @@
   cursor: not-allowed;
 }
 
+.arHelpText {
+  margin-top: var(--spacing-sm);
+  font-size: var(--font-size-xs);
+  color: var(--color-text-light);
+}
+
 /* full-screen overlay for model-viewer */
 .arOverlay {
   position: fixed;
@@ -89,4 +95,56 @@
   height: 100vh;
   background: rgba(0,0,0,0.8);
   z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arViewerContainer {
+  position: relative;
+  width: min(100vw, 520px);
+  height: min(100vh, 720px);
+  background: var(--color-bg);
+}
+
+.arCloseButton {
+  position: absolute;
+  top: var(--spacing-sm);
+  right: var(--spacing-sm);
+  z-index: 2;
+  border: 1px solid var(--color-border);
+  background: var(--color-bg);
+  color: var(--color-text);
+  border-radius: var(--border-radius-sm);
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.arLaunchButton {
+  position: absolute;
+  left: 50%;
+  bottom: var(--spacing-md);
+  transform: translateX(-50%);
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+  border: none;
+  border-radius: var(--border-radius);
+  padding: 10px 16px;
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.arHintText {
+  position: absolute;
+  left: var(--spacing-sm);
+  right: var(--spacing-sm);
+  bottom: 56px;
+  z-index: 2;
+  margin: 0;
+  padding: 8px 10px;
+  border-radius: var(--border-radius-sm);
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  font-size: var(--font-size-xs);
 }

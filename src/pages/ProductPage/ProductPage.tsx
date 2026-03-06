@@ -1,4 +1,4 @@
-import { useState, Suspense } from 'react'
+import { useEffect, useMemo, useRef, useState, Suspense } from 'react'
 import R3FLoadingIndicator from '@/components/three/R3FLoadingIndicator'
 import ProductSelector from '@/pages/ProductPage/ProductSelector'
 import { useProductSelection } from '@/pages/ProductPage/useProductSelection'
@@ -36,6 +36,41 @@ export default function ProductPage() {
   const [showDimensions, setShowDimensions] = useState(false)
   const [texturePath, setTexturePath] = useState<string | null>(null)
   const [showAR, setShowAR] = useState(false)
+  const [arHint, setArHint] = useState<string | null>(null)
+  const modelViewerRef = useRef<HTMLElement | null>(null)
+
+  const iosSrc = useMemo(() => {
+    if (!currentModelPath || !currentModelPath.endsWith('.glb')) return undefined
+    return currentModelPath.replace(/\.glb$/i, '.usdz')
+  }, [currentModelPath])
+
+  useEffect(() => {
+    if (!showAR) return
+
+    if (!window.isSecureContext) {
+      setArHint('AR cần HTTPS khi mở từ điện thoại trong cùng mạng LAN. Hãy chạy qua HTTPS/tunnel rồi thử lại.')
+      return
+    }
+
+    setArHint(null)
+  }, [showAR])
+
+  useEffect(() => {
+    const viewer = modelViewerRef.current
+    if (!viewer) return
+
+    const handleArStatus = (event: Event) => {
+      const customEvent = event as CustomEvent<{ status?: string }>
+      const status = customEvent.detail?.status
+
+      if (status === 'failed') {
+        setArHint('Không thể mở AR trên thiết bị này. Trên iPhone cần file .usdz, trên Android cần Scene Viewer/WebXR khả dụng.')
+      }
+    }
+
+    viewer.addEventListener('ar-status', handleArStatus)
+    return () => viewer.removeEventListener('ar-status', handleArStatus)
+  }, [showAR, currentModelPath])
   const textures = [
     '/models/textures/MS02/fabricbeige.jpg',
     '/models/textures/MS02/fabricbrown.jpg',
@@ -118,27 +153,54 @@ export default function ProductPage() {
           <div className={styles.section}>
             <button
               className={styles.arButton}
-              onClick={() => setShowAR(true)}
+              onClick={() => {
+                setArHint(null)
+                setShowAR(true)
+              }}
               disabled={!currentModelPath}
             >
               View in AR
             </button>
+            <p className={styles.arHelpText}>
+              Android: cần Google Scene Viewer/WebXR. iPhone/iPad: cần file .usdz để mở Quick Look AR.
+            </p>
           </div>
         </SidePanel>
       }
     />
 
       {showAR && currentModelPath && (
-        <div className={styles.arOverlay} onClick={() => setShowAR(false)}>
-          <model-viewer
-            src={currentModelPath}
-            alt="Product for AR"
-            ar
-            ar-modes="webxr scene-viewer quick-look"
-            camera-controls
-            environment-image="neutral"
-            style={{ width: '100%', height: '100%' }}
-          />
+        <div className={styles.arOverlay}>
+          <div
+            className={styles.arViewerContainer}
+            onClick={(event) => event.stopPropagation()}
+          >
+            <button
+              type="button"
+              className={styles.arCloseButton}
+              onClick={() => setShowAR(false)}
+            >
+              Close
+            </button>
+            <model-viewer
+              ref={modelViewerRef as never}
+              src={currentModelPath}
+              ios-src={iosSrc}
+              alt="Product for AR"
+              ar
+              ar-modes="webxr scene-viewer quick-look"
+              ar-placement="floor"
+              ar-scale="auto"
+              camera-controls
+              environment-image="neutral"
+              style={{ width: '100%', height: '100%' }}
+            >
+              <button slot="ar-button" className={styles.arLaunchButton}>
+                Start AR
+              </button>
+            </model-viewer>
+            {arHint ? <p className={styles.arHintText}>{arHint}</p> : null}
+          </div>
         </div>
       )}
     </>
